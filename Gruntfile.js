@@ -40,6 +40,10 @@ module.exports = function (grunt) {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
                 tasks: ['compass:server']
             },
+            handlebars: {
+                files: ['<%= yeoman.app %>/templates/{,*/}*.hbs'],
+                tasks: 'handlebars'
+            },
             livereload: {
                 options: {
                     livereload: LIVERELOAD_PORT
@@ -166,6 +170,23 @@ module.exports = function (grunt) {
                 }
             }
         },
+        handlebars: {
+            compile: {
+                files: {
+                    '.tmp/scripts/templates.js': '<%= yeoman.app %>/templates/{,*/}*.hbs'
+                },
+                options: {
+                    namespace: 'Templates',
+                    wrapped: true,
+                    processName: function(filename) {
+                        // funky name processing here
+                        return filename
+                            .replace(/^app\/templates\//, '')
+                            .replace(/\.hbs$/, '');
+                    }
+                }
+            }
+        },
         // not used since Uglify task does concat,
         // but still available if needed
         /*concat: {
@@ -280,6 +301,7 @@ module.exports = function (grunt) {
         concurrent: {
             server: [
                 'coffee:dist',
+                'handlebars',
                 'compass:server'
             ],
             test: [
@@ -288,6 +310,7 @@ module.exports = function (grunt) {
             ],
             dist: [
                 'coffee',
+                'handlebars',
                 'compass:dist',
                 'imagemin',
                 'svgmin',
