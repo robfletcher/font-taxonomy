@@ -43,6 +43,10 @@ a {
 .page-header {
 	max-width: 960px;
 	padding: 0 rhythm(1);
+
+	h1 {
+		@include adjust-font-size-to(40px);
+	}
 }
 
 .classification {
@@ -50,7 +54,10 @@ a {
 	> header {
 		padding: 1em;
 		h1 {
-			@include adjust-font-size-to(64px);
+			@include adjust-font-size-to(40px);
+			@media(min-width: 768px) {
+				@include adjust-font-size-to(64px);
+			}
 			margin: 0;
 			border-bottom: 3px dotted $body-text-color;
 		}
@@ -81,7 +88,10 @@ a {
 		}
 		border-bottom: 3px dotted $body-text-color;
 		h1 {
-			@include adjust-font-size-to(64px);
+			@include adjust-font-size-to(40px);
+			@media(min-width: 768px) {
+				@include adjust-font-size-to(64px);
+			}
 			margin: 0;
 		}
 		dt, dd {
