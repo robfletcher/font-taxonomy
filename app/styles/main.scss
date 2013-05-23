@@ -22,7 +22,6 @@ body {
     background-color: $body-background;
     color: $body-text-color;
     font-family: $serif-stack;
-    max-width: 1024px;
     margin: 0 auto;
     padding: 1em;
 }
@@ -58,7 +57,7 @@ figure {
 	}
 
 	header {
-		@media(min-width: 1024px) {
+		@media(min-width: 1400px) {
 			width: 45%;
 			float: left;
 			margin-right: 5%;
@@ -92,16 +91,26 @@ figure {
 	}
 
 	.character-set {
-		@media(min-width: 1024px) {
+		@media(min-width: 1400px) {
 			width: 45%;
 			float: left;
 		}
 		@include adjust-font-size-to(36px);
 
 		p {
-			display: inline-block;
+			float: left;
 			margin: 0;
 			@include word-break(break-all);
+		}
+
+		.lowercase, .symbols {
+			clear: left;
+		}
+
+		.lowercase, .numerals {
+			&:after {
+				content: '\00a0';
+			}
 		}
 	}
 
