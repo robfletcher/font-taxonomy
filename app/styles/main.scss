@@ -1,5 +1,4 @@
 @import "compass";
-@import "http://fonts.googleapis.com/css?family=Crimson+Text";
 
 $black: #222;
 $white: #fff;
@@ -51,6 +50,11 @@ figure {
 }
 
 .font {
+	display: none;
+	&.wf-active {
+		display: block;
+	}
+
 	margin: 1em 0;
 	padding: 1em;
 	background-color: $font-section-background;
@@ -137,12 +141,5 @@ figure {
 			margin: 0;
 			line-height: 1.5;
 		}
-	}
-}
-
-#crimson {
-	.character-set, .anatomy {
-		font-family: 'Crimson Text', serif;
-		font-weight: 400;
 	}
 }
