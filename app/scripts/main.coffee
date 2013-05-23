@@ -4,8 +4,15 @@ $ ->
 
 	$('.character-set .uppercase, .character-set .lowercase').lettering()
 
+	$('.character-set').each ->
+		$this = $ @
+		caption = $this.find('figcaption')
+		weight = $this.css('font-weight')
+		style = if $this.css('font-style') == 'italic' then ' italic' else ''
+		caption.text("#{caption.text()} #{weight}#{style}")
+
 	$('.font').each ->
-		$container = $(@)
+		$container = $ @
 		$anatomy = $container.find('.anatomy')
 		text = $anatomy.text()
 		color = $anatomy.css('color')

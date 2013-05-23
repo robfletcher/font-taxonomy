@@ -112,6 +112,16 @@ figure {
 				content: '\00a0';
 			}
 		}
+
+		figcaption {
+			clear: both;
+			@include adjust-font-size-to($to-size: 16px, $from-size: 36px);
+			@include padding-leader(1);
+			font: {
+				family: $sans-stack;
+				style: italic;
+			}
+		}
 	}
 
 	.anatomy {
