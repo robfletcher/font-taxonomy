@@ -14,7 +14,9 @@ $ ->
 
     $fontSection.find('.character-set .uppercase, .character-set .lowercase').lettering()
 
-    $fontSection.find('figure').css('font-family', @webfont.name ? @name)
+    $fontSection.find('figure').css
+      'font-family': @webfont.name ? @name
+      'font-weight': @example.weight
     $fontSection.find('.anatomy').css('color', @example.color)
     codes = (@example.text.charCodeAt(index) for index in [0...@example.text.length])
     for code in codes
