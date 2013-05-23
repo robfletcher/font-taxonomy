@@ -4,6 +4,8 @@ $black: #222;
 $white: #fff;
 $paper: #ebe1ca;
 
+$contrasted-dark-default: $black;
+
 $body-background: $paper;
 $body-text-color: $black;
 $font-section-background: $white;
@@ -21,8 +23,7 @@ body {
     background-color: $body-background;
     color: $body-text-color;
     font-family: $serif-stack;
-    margin: 0 auto;
-    padding: 1em;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,16 +34,23 @@ figure {
 	margin: 0;
 }
 
+a {
+	color: inherit;
+	border-bottom: 1px dotted $body-text-color;
+	text-decoration: none;
+}
+
 .page-header {
 	max-width: 960px;
-	padding: 0 1em;
+	padding: 0 rhythm(1);
 }
 
 .classification {
+	padding: 0 rhythm(1);
 	> header {
 		padding: 1em;
 		h1 {
-			@include adjust-font-size-to(96px);
+			@include adjust-font-size-to(64px);
 			margin: 0;
 			border-bottom: 3px dotted $body-text-color;
 		}
@@ -55,8 +63,8 @@ figure {
 		display: block;
 	}
 
-	margin: 1em 0;
-	padding: 1em;
+	margin-bottom: rhythm(1);
+	padding: rhythm(1);
 	background-color: $font-section-background;
 	width: 100%;
 
@@ -88,11 +96,6 @@ figure {
 			}
 		}
 		dd {
-			a {
-				color: inherit;
-				border-bottom: 1px dotted $body-text-color;
-				text-decoration: none;
-			}
 			&:not(:last-child):after {
 				content: ' //';
 			}
@@ -141,5 +144,24 @@ figure {
 			margin: 0;
 			line-height: 1.5;
 		}
+	}
+}
+
+.page-footer {
+	@include contrasted($black);
+	-webkit-font-smoothing: antialiased;
+	@include margin-leader(2);
+	padding: rhythm(2);
+
+	p:first-child {
+		margin-top: 0;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	a {
+		border-bottom-color: contrast-color($black);
 	}
 }
