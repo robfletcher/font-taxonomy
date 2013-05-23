@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
@@ -16,22 +15,49 @@
         <!-- endbuild -->
     </head>
     <body>
-        <div class="container">
-            <div class="hero-unit">
-                <h1>'Allo, 'Allo!</h1>
-                <p>You now have</p>
-                <ul>
-                    <li>HTML5 Boilerplate</li>
-                    <li>Twitter Bootstrap</li>
-                </ul>
-                <p>installed.</p>
-                <h3>Enjoy coding! - Yeoman</h3>
-            </div>
-        </div>
+        <header>
+            <h1></h1>
+            <p></p>
+        </header>
 
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+        <section id="humanist-serif" class="classification">
+            <header>
+                <h1>Humanist Serif</h1>
+            </header>
+            <article id="crimson" class="font">
+                <header>
+                    <h1>Crimson</h1>
+                    <dl>
+                        <dt>Designer</dt>
+                        <dd><a href="http://www.aldusleaf.org/index.html" rel="external">Sebastian Kosch</a></dd>
+                        <dt>Foundry</dt>
+                        <dd></dd>
+                        <dt>License</dt>
+                        <dd><a href="http://scripts.sil.org/OFL" rel="external">SIL Open Font License 1.1</a></dd>
+                        <dt>Country of origin</dt>
+                        <dd>Germany / Canada</dd>
+                        <dt>Release years</dt>
+                        <dd>2010</dd>
+                        <dt>Classification</dt>
+                        <dd>Humanist serif</dd>
+                        <dt>Styles</dt>
+                        <dd>6</dd>
+                    </dl>
+                </header>
+                <aside class="character-set">
+                    <p class="uppercase">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                    <p class="lowercase">abcdefghijklmnopqrstuvwxyz</p>
+                    <p class="numerals">0123456789</p>
+                    <p class="fractions">&frac14; &frac12; &frac34;</p>
+                    <p class="lcase-accents">[&agrave;&oacute;&uuml;&szlig;&ccedil;]</p>
+                    <p class="punctuation">(.,:;?!$£&amp;-*)</p>
+                    <p class="ucase-accents">{&Agrave;&Oacute;&Uuml;&Ccedil;}</p>
+                </aside>
+                <figure class="anatomy">
+                    <p>Swashbuckling</p>
+                </figure>
+            </article>
+        </section>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -43,11 +69,9 @@
 
         <!-- build:js scripts/main.js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/BigText/bigtext.js"></script>
+        <script src="bower_components/Lettering.js/jquery.lettering.js"></script>
         <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js(.tmp) scripts/coffee.js -->
-        <script src="scripts/hello.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -1,0 +1,127 @@
+@import "compass";
+@import "http://fonts.googleapis.com/css?family=Crimson+Text";
+
+$black: #222;
+$white: #fff;
+$blanchedalmond: rgb(255, 235, 205);
+
+$body-background: $blanchedalmond;
+$body-text-color: $black;
+$font-section-background: $white;
+
+$serif-stack: serif;
+$sans-stack: sans-serif;
+
+@include establish-baseline;
+
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+
+body {
+    background-color: $body-background;
+    color: $body-text-color;
+    font-family: $serif-stack;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
+figure {
+	margin: 0;
+}
+
+.classification {
+	> header {
+		padding: 1em;
+		h1 {
+			@include adjust-font-size-to(96px);
+			margin: 0;
+			border-bottom: 3px dotted $body-text-color;
+		}
+	}
+}
+
+.font {
+	margin: 1em 0;
+	padding: 1em;
+	background-color: $font-section-background;
+	width: 100%;
+
+	header, .character-set {
+		margin-bottom: 24px;
+		margin-bottom: 1.5rem;
+	}
+
+	header {
+		@media(min-width: 1024px) {
+			width: 45%;
+			float: left;
+			margin-right: 5%;
+		}
+		border-bottom: 3px dotted $body-text-color;
+		h1 {
+			@include adjust-font-size-to(64px);
+			margin: 0;
+		}
+		dt, dd {
+			display: inline-block;
+			margin: 0;
+			font-family: $sans-stack;
+		}
+		dt {
+			font-weight: bold;
+			&:after {
+				content: ':';
+			}
+		}
+		dd {
+			a {
+				color: inherit;
+				border-bottom: 1px dotted $body-text-color;
+				text-decoration: none;
+			}
+			&:not(:last-child):after {
+				content: ' //';
+			}
+		}
+	}
+
+	.character-set {
+		@media(min-width: 1024px) {
+			width: 45%;
+			float: left;
+		}
+		@include adjust-font-size-to(36px);
+
+		p {
+			display: inline-block;
+			margin: 0;
+			@include word-break(break-all);
+		}
+	}
+
+	.anatomy {
+		width: 100%;
+		@include clearfix;
+
+		p {
+			margin: 0;
+			line-height: 1.5;
+		}
+	}
+}
+
+#crimson {
+	.character-set, .anatomy {
+		font-family: 'Crimson Text', serif;
+		font-weight: 400;
+	}
+	.anatomy {
+		color: #ed143d;
+	}
+}
