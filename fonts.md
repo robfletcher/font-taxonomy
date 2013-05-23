@@ -2,14 +2,12 @@
 
 * IM Fell French Canon
 * Fanwood Text
-* *Gentium Basic* / Gentium Book Basic
 * Sorts Mill Goudy
 * *Linden Hill*
 * IM Fell Great Primer
 * *Philosopher*
 * *Mate* / Mate SC
 * *Simonetta*
-* *Crimson Text*
 * Junge
 * EB Garamond
 * Cardo
@@ -19,12 +17,10 @@
 
 * Noto Serif
 * Domine
-* *Libre Baskerville*
 * *PT Serif* / PT Serif Caption
 * Lusitana
 * Tinos
 * *Playfair Display* / Playfair Display SC
-* *Quattrocento*
 * Trykker
 * *Neuton*
 
@@ -36,7 +32,6 @@
 * *Cantata One*
 * Bentham
 * *Vidaloka*
-* Elsie
 
 ## Contemporary Serif
 
@@ -48,7 +43,6 @@
 * *Lora*
 * Rufina
 * Judson
-* *Merriweather*
 * Inika
 * *Tienne*
 
