@@ -161,7 +161,7 @@ module.exports = function (grunt) {
                 importPath: '<%= yeoman.app %>/bower_components',
                 httpImagesPath: '/images',
                 httpGeneratedImagesPath: '/images/generated',
-                relativeAssets: true
+                relativeAssets: false
             },
             dist: {},
             server: {
