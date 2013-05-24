@@ -142,4 +142,70 @@ window.fonts = [
   example:
     text: "Meteorologist"
     color: "#0066cc"
+,
+  name: "Asul"
+  webfont:
+    config:
+      google:
+        family: "Asul::latin"
+    weight: 400
+  urls:
+    google: "http://www.google.com/fonts/specimen/Asul"
+  designer:
+    name: "Mariela Monsalve"
+  license:
+    name: "SIL Open Font License 1.1"
+    url: "http://scripts.sil.org/OFL"
+  country: "Argentina"
+  year: 2012
+  classification: "Inscribed / Engraved"
+  styles: 2
+  example:
+    text: "Defrenética"
+    color: "#4682b4"
+,
+  name: "Cuprum"
+  webfont:
+    config:
+      google:
+        family: "Cuprum"
+    weight: 400
+  urls:
+    google: "http://www.google.com/fonts/specimen/Cuprum"
+    fontsquirrel: "http://www.fontsquirrel.com/fonts/CuprumFFU"
+  designer:
+    name: "Jovanny Lemonad"
+    url: "http://www.jovanny.ru/"
+  license:
+    name: "SIL Open Font License 1.1"
+    url: "http://scripts.sil.org/OFL"
+  country: "Russia"
+  year: 2012
+  classification: "Grotesque sans"
+  styles: 4
+  example:
+    text: "Vyzdoravlivajte"
+    color: "#b87333"
+,
+  name: "Source Sans Pro"
+  webfont:
+    config:
+      google:
+        family: "Source+Sans+Pro::latin"
+    weight: 400
+  urls:
+    google: "http://www.google.com/fonts/specimen/Source+Sans+Pro"
+    fontsquirrel: "http://www.fontsquirrel.com/fonts/source-sans-pro"
+  designer:
+    name: "Paul D. Hunt"
+  license:
+    name: "SIL Open Font License 1.1"
+    url: "http://scripts.sil.org/OFL"
+  country: "USA / UK"
+  year: 2012
+  classification: "Neo-Grotesque sans"
+  styles: 12
+  example:
+    text: "Simplifying"
+    color: "#1f7eab"
 ]

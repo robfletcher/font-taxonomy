@@ -53,16 +53,13 @@
 * *Rosarivo*
 * Radley
 * Cinzel / Cinzel Decorative (Trajan)
-* *Asul* (Albertus)
 
 ## Grotesque Sans
 
-* Cuprum
 
 ## Neo-Grotesque Sans
 
 * Titillium Web
-* *Source Sans Pro*
 * Oxygen
 * Pontano Sans
 * *Chivo*
