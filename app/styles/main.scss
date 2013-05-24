@@ -210,10 +210,10 @@ a {
 					size: contain;
 				}
 				&[href*='fontsquirrel.com'] {
-					background-image: image-url('../images/fontsquirrel.png');
+					background-image: image-url('fontsquirrel.png');
 				}
 				&[href*='google.com'] {
-					background-image: image-url('../images/google.png');
+					background-image: image-url('google.png');
 				}
 
 				&:focus, &:hover {
