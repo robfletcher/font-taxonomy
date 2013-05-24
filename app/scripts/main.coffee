@@ -24,7 +24,7 @@ createSection = (font) ->
   $section.append $fontSection
 
 createNav = (font) ->
-  $parent = $(".font-nav a[href='##{Handlebars.helpers.normalize(font.classification)}'] + ol")
+  $parent = $(".font-nav a[href='##{Handlebars.helpers.normalize(font.classification)}']").parent().next('ol')
   $item = $ Templates.nav(font)
   $item.find('a').css('font-family', font.webfont.name ? font.name)
   $parent.append $item
