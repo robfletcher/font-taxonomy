@@ -246,6 +246,7 @@ window.fonts =
         config:
           google:
             family: "Noto+Sans::latin"
+        weight: 400
       urls: [
         "http://www.google.com/fonts/specimen/Noto+Sans"
       ]
@@ -261,5 +262,60 @@ window.fonts =
       example:
         text: "Encompassing"
         color: "#00a816"
+    ]
+  ,
+    name: "Geometric sans"
+    fonts: [
+      name: "Play"
+      webfont:
+        config:
+          google:
+            family: "Play::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/Play"
+        "http://www.fontsquirrel.com/fonts/play"
+      ]
+      designer:
+        name: "Jonas Hecksher"
+      foundry:
+        name: "Playtype"
+        url: "https://www.playtype.com/"
+      license:
+        name: "SIL Open Font License 1.1"
+        url: "http://scripts.sil.org/OFL"
+      country: "Denmark"
+      year: 2011
+      classification: "Geometric sans"
+      styles: 2
+      example:
+        text: "Nødstilfælde"
+        color: "#FFD700"
+    ,
+      name: "Josefin Sans"
+      webfont:
+        config:
+          google:
+            family: "Josefin+Sans::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/Josefin+Sans"
+        "http://www.fontsquirrel.com/fonts/Josefin"
+      ]
+      designer:
+        name: "Santiago Orozco"
+      foundry:
+        name: "Typemade"
+        url: "http://typemade.mx/"
+      license:
+        name: "SIL Open Font License 1.1"
+        url: "http://scripts.sil.org/OFL"
+      country: "Mexico"
+      year: 2010
+      classification: "Geometric sans"
+      styles: 10
+      example:
+        text: "Café Negro"
+        color: "#48D1CC"
     ]
   ]
