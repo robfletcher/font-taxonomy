@@ -23,7 +23,7 @@ colorizeCharacterSet = ->
     $section.find(".character-set #{selector} .char#{char}").css('color', color)
 
 createContent = (data) ->
-  $('.page-header').after Templates.fonts(data)
+  $('.container').append Templates.fonts(data)
 
   $('.character-set .uppercase, .character-set .lowercase').lettering()
 

@@ -30,8 +30,7 @@ body {
     background-color: $body-background;
     color: $body-text-color;
     font-family: $serif-stack;
-    max-width: $max-width;
-    margin: 0 auto;
+    margin: 0;
 
 	@include single-transition(opacity);
     opacity: 0;
@@ -57,6 +56,11 @@ a {
 		color: $blue;
 		border-bottom-color: $blue;
 	}
+}
+
+.container {
+    max-width: $max-width;
+    margin: 0 auto;
 }
 
 .page-header {
@@ -200,7 +204,7 @@ a {
 					radius: 50%;
 				}
 				background: {
-					color: $black;
+					color: $white;
 					position: 0 0;
 					repeat: no-repeat;
 					size: contain;
@@ -270,15 +274,25 @@ a {
 	@include margin-leader(2);
 	padding: rhythm(2);
 
-	p:first-child {
-		margin-top: 0;
-	}
+	p {
+	    max-width: $max-width;
+	    margin: 0 auto;
 
-	p:last-child {
-		margin-bottom: 0;
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	a {
 		border-bottom-color: contrast-color($black);
+
+		&:focus, &:hover {
+			color: lighten($blue, 35%);
+			border-bottom-color: lighten($blue, 35%);
+		}
 	}
 }

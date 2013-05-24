@@ -78,7 +78,7 @@ window.fonts =
       classification: "Transitional serif"
       styles: 3
       example:
-        text: "Bárbado"
+        text: "Lo pasamos bárbaro"
         color: "#4682b4"
     ,
       name: "Quattrocento"
