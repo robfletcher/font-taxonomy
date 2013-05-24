@@ -3,8 +3,11 @@
 $black: #222;
 $white: #fff;
 $paper: #ebe1ca;
+$blue: #1f7eab;
 
+// overrides for compass defaults
 $contrasted-dark-default: $black;
+$default-transition-duration: 0.3s;
 
 $body-background: $paper;
 $body-text-color: $black;
@@ -49,15 +52,23 @@ a {
 	color: inherit;
 	border-bottom: 1px dotted $body-text-color;
 	text-decoration: none;
+	@include single-transition;
+	&:focus, &:hover {
+		color: $blue;
+		border-bottom-color: $blue;
+	}
 }
 
 .page-header {
 	max-width: 960px;
-
 }
 
 .page-header, .font-nav {
 	padding: 0 rhythm(1);
+
+	h1 {
+		@include adjust-font-size-to(40px);
+	}
 }
 
 .page-header, .font-nav, .classification {
@@ -65,10 +76,6 @@ a {
 }
 
 .font-nav {
-	h1 {
-		@include adjust-font-size-to(40px);
-	}
-
 	h2 {
 		@include adjust-font-size-to(24px);
 		margin-top: 0;
@@ -172,6 +179,42 @@ a {
 		dd {
 			&:not(:last-child):after {
 				content: ' //';
+			}
+		}
+
+		position: relative;
+		.links {
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			a {
+				display: inline-block;
+				width: 48px;
+				height: 48px;
+				text-indent: -9999px;
+				border: {
+					width: 4px;
+					style: solid;
+					color: $black;
+					radius: 50%;
+				}
+				background: {
+					color: $black;
+					position: 0 0;
+					repeat: no-repeat;
+					size: contain;
+				}
+				&[href*='fontsquirrel.com'] {
+					background-image: image-url('../images/fontsquirrel.png');
+				}
+				&[href*='google.com'] {
+					background-image: image-url('../images/google.png');
+				}
+
+				&:focus, &:hover {
+					background-color: $blue;
+				}
 			}
 		}
 	}

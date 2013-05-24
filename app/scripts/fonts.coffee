@@ -6,9 +6,9 @@ window.fonts = [
         family: "Crimson"
         url: "fonts/crimson/stylesheet.css"
     weight: 400
-  urls:
-    google: "http://www.google.com/fonts/specimen/Crimson+Text"
-    fontsquirrel: "http://www.fontsquirrel.com/fonts/Crimson"
+  urls: [
+    "http://www.fontsquirrel.com/fonts/Crimson"
+  ]
   designer:
     name: "Sebastian Kosch"
     url: "http://www.aldusleaf.org/index.html"
@@ -29,9 +29,10 @@ window.fonts = [
       google:
         family: "Gentium+Basic::latin"
     weight: 400
-  urls:
-    google: "http://www.google.com/fonts/specimen/Gentium%20Basic"
-    fontsquirrel: "http://www.fontsquirrel.com/fonts/Gentium-Basic"
+  urls: [
+    "http://www.google.com/fonts/specimen/Gentium%20Basic"
+    "http://www.fontsquirrel.com/fonts/Gentium-Basic"
+  ]
   designer:
     name: "Victor Gaultney"
   foundry:
@@ -54,9 +55,10 @@ window.fonts = [
       google:
         family: "Libre+Baskerville::latin"
     weight: 400
-  urls:
-    google: "http://www.google.com/fonts/specimen/Libre+Baskerville"
-    fontsquirrel: "http://www.fontsquirrel.com/fonts/libre-baskerville"
+  urls: [
+    "http://www.google.com/fonts/specimen/Libre+Baskerville"
+    "http://www.fontsquirrel.com/fonts/libre-baskerville"
+  ]
   designer:
     name: "Pablo Impallari"
   foundry:
@@ -79,9 +81,10 @@ window.fonts = [
       google:
         family: "Quattrocento::latin"
     weight: 400
-  urls:
-    google: "http://www.google.com/fonts/specimen/Quattrocento"
-    fontsquirrel: "http://www.fontsquirrel.com/fonts/quattrocento-roman"
+  urls: [
+    "http://www.google.com/fonts/specimen/Quattrocento"
+    "http://www.fontsquirrel.com/fonts/quattrocento-roman"
+  ]
   designer:
     name: "Pablo Impallari"
   foundry:
@@ -104,8 +107,9 @@ window.fonts = [
       google:
         family: "Elsie::latin"
     weight: 400
-  urls:
-    google: "http://www.google.com/fonts/specimen/Elsie"
+  urls: [
+    "http://www.google.com/fonts/specimen/Elsie"
+  ]
   designer:
     name: "Alejandro Inler"
     url: "http://www.behance.net/inler"
@@ -126,9 +130,10 @@ window.fonts = [
       google:
         family: "Merriweather::latin"
     weight: 400
-  urls:
-    google: "http://www.google.com/fonts/specimen/Merriweather"
-    fontsquirrel: "http://www.fontsquirrel.com/fonts/merriweather"
+  urls: [
+    "http://www.google.com/fonts/specimen/Merriweather"
+    "http://www.fontsquirrel.com/fonts/merriweather"
+  ]
   designer:
     name: "Eben Sorkin"
     url: "http://ebensorkin.wordpress.com/"
@@ -149,8 +154,9 @@ window.fonts = [
       google:
         family: "Asul::latin"
     weight: 400
-  urls:
-    google: "http://www.google.com/fonts/specimen/Asul"
+  urls: [
+    "http://www.google.com/fonts/specimen/Asul"
+  ]
   designer:
     name: "Mariela Monsalve"
   license:
@@ -170,9 +176,10 @@ window.fonts = [
       google:
         family: "Cuprum"
     weight: 400
-  urls:
-    google: "http://www.google.com/fonts/specimen/Cuprum"
-    fontsquirrel: "http://www.fontsquirrel.com/fonts/CuprumFFU"
+  urls: [
+    "http://www.google.com/fonts/specimen/Cuprum"
+    "http://www.fontsquirrel.com/fonts/CuprumFFU"
+  ]
   designer:
     name: "Jovanny Lemonad"
     url: "http://www.jovanny.ru/"
@@ -193,9 +200,10 @@ window.fonts = [
       google:
         family: "Source+Sans+Pro::latin"
     weight: 400
-  urls:
-    google: "http://www.google.com/fonts/specimen/Source+Sans+Pro"
-    fontsquirrel: "http://www.fontsquirrel.com/fonts/source-sans-pro"
+  urls: [
+    "http://www.google.com/fonts/specimen/Source+Sans+Pro"
+    "http://www.fontsquirrel.com/fonts/source-sans-pro"
+  ]
   designer:
     name: "Paul D. Hunt"
   license:
@@ -208,4 +216,25 @@ window.fonts = [
   example:
     text: "Simplifying"
     color: "#1f7eab"
+,
+  name: "Noto Sans"
+  webfont:
+    config:
+      google:
+        family: "Noto+Sans::latin"
+  urls: [
+    "http://www.google.com/fonts/specimen/Noto+Sans"
+  ]
+  foundry:
+    name: "Google"
+  license:
+    name: "Apache License, version 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+  country: "USA"
+  year: 2013
+  classification: "Gothic sans"
+  styles: 4
+  example:
+    text: "Encompassing"
+    color: "#00a816"
 ]

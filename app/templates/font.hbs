@@ -1,9 +1,16 @@
 <article id="{{normalize name}}" class="font">
     <header>
         <h1>{{name}}</h1>
+        <aside class="links">
+            {{#each urls}}
+                <a href="{{this}}">view at {{this}}</a>
+            {{/each}}
+        </aside>
         <dl>
+            {{#if designer}}
             <dt>Designer</dt>
             <dd>{{#if designer.url}}<a href="{{designer.url}}" rel="external">{{designer.name}}</a>{{else}}{{designer.name}}{{/if}}</dd>
+            {{/if}}
             {{#if foundry}}
             <dt>Foundry</dt>
             <dd>{{#if foundry.url}}<a href="{{foundry.url}}" rel="external">{{foundry.name}}</a>{{else}}{{foundry.name}}{{/if}}</dd>
