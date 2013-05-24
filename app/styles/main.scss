@@ -15,6 +15,8 @@ $sans-stack: sans-serif;
 
 $nav-font-size: 20px;
 
+$max-width: 1600px;
+
 @include establish-baseline;
 
 *, *:before, *:after {
@@ -25,7 +27,7 @@ body {
     background-color: $body-background;
     color: $body-text-color;
     font-family: $serif-stack;
-    max-width: 1600px;
+    max-width: $max-width;
     margin: 0 auto;
 
 	@include single-transition(opacity);
@@ -73,6 +75,31 @@ a {
 		@include margin-trailer(0.5, 24px);
 	}
 
+	ul {
+		padding-left: 0;
+		list-style-type: none;
+
+		.no-csscolumns & {
+			@include clearfix;
+			> li {
+				float: left;
+				margin-right: rhythm(1);
+			}
+		}
+
+		.csscolumns & {
+			$num-columns: 5;
+			$column-width: 280px;
+			@include columns($column-width $num-columns);
+			@include column-gap(rhythm(1));
+			@include column-rule(1px, solid, transparentize($black, 0.85));
+
+			> li {
+				@include column-break-inside(avoid);
+			}
+		}
+	}
+
 	ol {
 		@include adjust-font-size-to($nav-font-size);
 		@include margin-leader(0.5, $nav-font-size);
@@ -81,13 +108,7 @@ a {
 
 	li {
 		@include margin-trailer(0.5, $nav-font-size);
-	}
-
-	@include clearfix;
-	> div {
 		@include nowrap;
-		float: left;
-		margin-right: rhythm(1);
 	}
 }
 
