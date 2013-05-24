@@ -23,7 +23,14 @@ body {
     background-color: $body-background;
     color: $body-text-color;
     font-family: $serif-stack;
-    margin: 0;
+    max-width: 1600px;
+    margin: 0 auto;
+
+	@include single-transition(opacity);
+    opacity: 0;
+    .content-ready &, .no-js & {
+    	opacity: 1;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,10 +49,24 @@ a {
 
 .page-header {
 	max-width: 960px;
+
+}
+
+.page-header, .font-nav {
 	padding: 0 rhythm(1);
+}
+
+.font-nav {
+	@include adjust-font-size-to(20px);
+
 
 	h1 {
-		@include adjust-font-size-to(40px);
+		@include adjust-font-size-to($to-size: 40px, $from-size: 20px);
+	}
+
+	a {
+		display: inline-block;
+		@include margin-trailer(0.5);
 	}
 }
 

@@ -5,26 +5,36 @@ window.WebFontConfig =
     $("##{Handlebars.helpers.normalize(fontFamily)}").addClass('wf-active').find('.anatomy').bigtext
       childSelector: '> p'
 
+createSection = (font) ->
+  $section = $("##{Handlebars.helpers.normalize(font.classification)}")
+  $fontSection = $ Templates.font(font)
+
+  $fontSection.find('.character-set .uppercase, .character-set .lowercase').lettering()
+
+  $fontSection.find('figure').css
+    'font-family': font.webfont.name ? font.name
+    'font-weight': font.example.weight
+  $fontSection.find('.anatomy').css('color', font.example.color)
+  codes = (font.example.text.charCodeAt(index) for index in [0...font.example.text.length])
+  for code in codes
+    char = if code <= 96 then code - 64 else code - 96
+    selector = if code <= 96 then '.uppercase' else '.lowercase'
+    $fontSection.find(".character-set #{selector} .char#{char}").css('color', font.example.color)
+
+  $section.append $fontSection
+
+createNav = (font) ->
+  $parent = $(".font-nav a[href='##{Handlebars.helpers.normalize(font.classification)}'] + ol")
+  $item = $ Templates.nav(font)
+  $item.find('a').css('font-family', font.webfont.name ? font.name)
+  $parent.append $item
+
 $ ->
   $.each fonts, ->
     WebFontConfig.google.families.push @webfont.config
-
-    $section = $("##{Handlebars.helpers.normalize(@classification)}")
-    $fontSection = $ Templates.font(@)
-
-    $fontSection.find('.character-set .uppercase, .character-set .lowercase').lettering()
-
-    $fontSection.find('figure').css
-      'font-family': @webfont.name ? @name
-      'font-weight': @example.weight
-    $fontSection.find('.anatomy').css('color', @example.color)
-    codes = (@example.text.charCodeAt(index) for index in [0...@example.text.length])
-    for code in codes
-      char = if code <= 96 then code - 64 else code - 96
-      selector = if code <= 96 then '.uppercase' else '.lowercase'
-      $fontSection.find(".character-set #{selector} .char#{char}").css('color', @example.color)
-
-    $section.append $fontSection
+    createSection @
+    createNav @
+    $('html').addClass('content-ready')
 
   wf = document.createElement("script")
   wf.src = ((if "https:" is document.location.protocol then "https" else "http")) + "://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"
