@@ -1,7 +1,10 @@
 window.fonts = [
-  name: "Crimson Text"
+  name: "Crimson"
   webfont:
-    config: "Crimson+Text::latin"
+    config:
+      custom:
+        family: "Crimson"
+        url: "fonts/crimson/stylesheet.css"
     weight: 400
   urls:
     google: "http://www.google.com/fonts/specimen/Crimson+Text"
@@ -22,7 +25,9 @@ window.fonts = [
 ,
   name: "Gentium Basic"
   webfont:
-    config: "Gentium+Basic::latin"
+    config:
+      google:
+        family: "Gentium+Basic::latin"
     weight: 400
   urls:
     google: "http://www.google.com/fonts/specimen/Gentium%20Basic"
@@ -45,7 +50,9 @@ window.fonts = [
 ,
   name: "Libre Baskerville"
   webfont:
-    config: "Libre+Baskerville::latin"
+    config:
+      google:
+        family: "Libre+Baskerville::latin"
     weight: 400
   urls:
     google: "http://www.google.com/fonts/specimen/Libre+Baskerville"
@@ -68,7 +75,9 @@ window.fonts = [
 ,
   name: "Quattrocento"
   webfont:
-    config: "Quattrocento::latin"
+    config:
+      google:
+        family: "Quattrocento::latin"
     weight: 400
   urls:
     google: "http://www.google.com/fonts/specimen/Quattrocento"
@@ -91,7 +100,9 @@ window.fonts = [
 ,
   name: "Elsie"
   webfont:
-    config: "Elsie::latin"
+    config:
+      google:
+        family: "Elsie::latin"
     weight: 400
   urls:
     google: "http://www.google.com/fonts/specimen/Elsie"
@@ -111,7 +122,9 @@ window.fonts = [
 ,
   name: "Merriweather"
   webfont:
-    config: "Merriweather::latin"
+    config:
+      google:
+        family: "Merriweather::latin"
     weight: 400
   urls:
     google: "http://www.google.com/fonts/specimen/Merriweather"

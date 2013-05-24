@@ -1,6 +1,9 @@
 window.WebFontConfig =
   google:
     families: []
+  custom:
+    families: []
+    urls: []
   fontactive: (fontFamily, fontDescription) ->
     $("##{Handlebars.helpers.normalize(fontFamily)}").addClass('wf-active').find('.anatomy').bigtext
       childSelector: '> p'
@@ -31,7 +34,9 @@ createNav = (font) ->
 
 $ ->
   $.each fonts, ->
-    WebFontConfig.google.families.push @webfont.config
+    for provider of @webfont.config
+      WebFontConfig[provider].families.push @webfont.config[provider].family if @webfont.config[provider].family?
+      WebFontConfig[provider].urls.push @webfont.config[provider].url if @webfont.config[provider].url?
     createSection @
     createNav @
     $('html').addClass('content-ready')
