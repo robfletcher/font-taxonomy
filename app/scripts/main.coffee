@@ -8,38 +8,37 @@ window.WebFontConfig =
     $("##{Handlebars.helpers.normalize(fontFamily)}").addClass('wf-active').find('.anatomy').bigtext
       childSelector: '> p'
 
-createSection = (font) ->
-  $section = $("##{Handlebars.helpers.normalize(font.classification)}")
-  $fontSection = $ Templates.font(font)
-
-  $fontSection.find('.character-set .uppercase, .character-set .lowercase').lettering()
-
-  $fontSection.find('figure').css
-    'font-family': font.webfont.name ? font.name
-    'font-weight': font.example.weight
-  $fontSection.find('.anatomy').css('color', font.example.color)
-  codes = (font.example.text.charCodeAt(index) for index in [0...font.example.text.length])
+colorizeCharacterSet = ->
+  $section = $ @
+  color = $section.find('.anatomy').css('color')
+  text = $section.find('.anatomy p').text()
+  codes = (text.charCodeAt(index) for index in [0...text.length])
   for code in codes
-    char = if code <= 96 then code - 64 else code - 96
-    selector = if code <= 96 then '.uppercase' else '.lowercase'
-    $fontSection.find(".character-set #{selector} .char#{char}").css('color', font.example.color)
+    if code <= 96
+      char = code - 64
+      selector = '.uppercase'
+    else
+      char = code - 96
+      selector = '.lowercase'
+    $section.find(".character-set #{selector} .char#{char}").css('color', color)
 
-  $section.append $fontSection
+createContent = (data) ->
+  $('.page-header').after Templates.fonts(data)
 
-createNav = (font) ->
-  $parent = $(".font-nav a[href='##{Handlebars.helpers.normalize(font.classification)}']").parent().next('ol')
-  $item = $ Templates.nav(font)
-  $item.find('a').css('font-family', font.webfont.name ? font.name)
-  $parent.append $item
+  $('.character-set .uppercase, .character-set .lowercase').lettering()
+
+  $('.font').each colorizeCharacterSet
 
 $ ->
-  $.each fonts, ->
-    for provider of @webfont.config
-      WebFontConfig[provider].families.push @webfont.config[provider].family if @webfont.config[provider].family?
-      WebFontConfig[provider].urls.push @webfont.config[provider].url if @webfont.config[provider].url?
-    createSection @
-    createNav @
-    $('html').addClass('content-ready')
+  createContent fonts
+
+  for family in fonts.families
+    for font in family.fonts
+      for provider of font.webfont.config
+        WebFontConfig[provider].families.push font.webfont.config[provider].family if font.webfont.config[provider].family?
+        WebFontConfig[provider].urls.push font.webfont.config[provider].url if font.webfont.config[provider].url?
+
+  $('html').addClass('content-ready')
 
   wf = document.createElement("script")
   wf.src = ((if "https:" is document.location.protocol then "https" else "http")) + "://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"
