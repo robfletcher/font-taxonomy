@@ -134,6 +134,7 @@ a {
 		display: block;
 	}
 
+	@include margin-trailer(1);
 	padding: rhythm(1);
 	background-color: $font-section-background;
 	width: 100%;
