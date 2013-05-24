@@ -56,6 +56,7 @@
 
 ## Grotesque Sans
 
+* *Roboto*
 
 ## Neo-Grotesque Sans
 
@@ -100,7 +101,6 @@
 ## Neo-Humanist Sans
 
 * *Merriweather Sans*
-* *Roboto*
 * Ubuntu
 * Scada
 * *Signika* / Signika Negative
@@ -115,7 +115,6 @@
 ## Grotesque Slab
 
 * Roboto Slab
-* *Trocchi*
 * Arbutus Slab
 * Podkova
 * Port Lligat Slab
@@ -123,9 +122,7 @@
 ## Geometric Slab
 
 * Josefin Slab
-* *Arvo*
 * Stint Ultra
-* *Rokkitt*
 * Cutive
 * Sanchez
 
@@ -133,17 +130,15 @@
 
 * Nixie One
 * Kameron
-* *Coustard*
 * *Bitter*
 * *Enriqueta*
 * Kreon
 * Crete Round
-* *Noticia Text*
 
 ## Script
 
 * Yesteryear
-* Jim Nightshade*
+* *Jim Nightshade*
 * *Kaushan Script*
 * Devonshire
 * *Engagement*

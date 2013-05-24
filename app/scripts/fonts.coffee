@@ -211,6 +211,31 @@ window.fonts =
       example:
         text: "Vyzdoravlivajte"
         color: "#b87333"
+    ,
+      name: "Roboto"
+      webfont:
+        config:
+          google:
+            family: "Roboto::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/Roboto"
+        "http://www.fontsquirrel.com/fonts/roboto"
+      ]
+      designer:
+        name: "Christian Robertson"
+      foundry:
+        name: "Google"
+      license:
+        name: "Apache License, version 2.0"
+        url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+      country: "USA"
+      year: 2011
+      classification: "Grotesque sans"
+      styles: 12
+      example:
+        text: "Kinematics"
+        color: "#559acf"
     ]
   ,
     name: "Neo-Grotesque sans"
@@ -317,5 +342,214 @@ window.fonts =
       example:
         text: "Café Negro"
         color: "#48D1CC"
+    ]
+  ,
+    name: "Humanist sans"
+    fonts: [
+      name: "PT Sans"
+      webfont:
+        config:
+          google:
+            family: "PT+Sans::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/PT+Sans"
+        "http://www.fontsquirrel.com/fonts/PT-Sans"
+      ]
+      foundry:
+        name: "Paratype"
+        url: "http://www.paratype.com/"
+      license:
+        name: "SIL Open Font License 1.1"
+        url: "http://scripts.sil.org/OFL"
+      country: "USA"
+      year: 2009
+      classification: "Humanist sans"
+      styles: 4
+      example:
+        text: "Quantophrenia"
+        color: "#990000"
+    ]
+  ,
+    name: "Neo-Humanist sans"
+    fonts: [
+      name: "Lato"
+      webfont:
+        config:
+          google:
+            family: "Lato::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/Lato"
+        "http://www.fontsquirrel.com/fonts/lato"
+      ]
+      designer:
+        name: "Łukasz Dziedzic"
+      foundry:
+        name: "tyPoland"
+        url: "http://www.typoland.com/"
+      license:
+        name: "SIL Open Font License 1.1"
+        url: "http://scripts.sil.org/OFL"
+      country: "Poland"
+      year: 2010
+      classification: "Neo-Humanist sans"
+      styles: 10
+      example:
+        text: "Dzieńdobry"
+        color: "#00CD66"
+    ]
+  ,
+    name: "Grotesque slab"
+    fonts: [
+      name: "Trocchi"
+      webfont:
+        config:
+          google:
+            family: "Trocchi::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/Trocchi"
+        "http://www.fontsquirrel.com/fonts/trocchi"
+      ]
+      designer:
+        name: "Vernon Adams"
+        url: "https://plus.google.com/107807505287232434305/about"
+      license:
+        name: "SIL Open Font License 1.1"
+        url: "http://scripts.sil.org/OFL"
+      country: "UK"
+      year: 2012
+      classification: "Grotesque slab"
+      styles: 2
+      example:
+        text: "Gastromancy"
+        color: "#9370DB"
+    ,
+      name: "Arbutus Slab"
+      webfont:
+        config:
+          google:
+            family: "Arbutus+Slab::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/Arbutus+Slab"
+      ]
+      designer:
+        name: "Karolina Lach"
+        url: "http://www.thekarolina.com/"
+      license:
+        name: "SIL Open Font License 1.1"
+        url: "http://scripts.sil.org/OFL"
+      country: "USA"
+      year: 2012
+      classification: "Grotesque slab"
+      styles: 1
+      example:
+        text: "Expressway"
+        color: "#d1641b"
+    ]
+  ,
+    name: "Geometric slab"
+    fonts: [
+      name: "Arvo"
+      webfont:
+        config:
+          google:
+            family: "Arvo::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/Arvo"
+        "http://www.fontsquirrel.com/fonts/arvo"
+      ]
+      designer:
+        name: "Anton Koovit"
+      foundry:
+        name: "Fatype"
+        url: "http://www.fatype.com/"
+      license:
+        name: "SIL Open Font License 1.1"
+        url: "http://scripts.sil.org/OFL"
+      country: "Estonia / Netherlands"
+      year: 2010
+      classification: "Geometric slab"
+      styles: 4
+      example:
+        text: "Jalgratas"
+        color: "#668B8B"
+    ,
+      name: "Rokkitt"
+      webfont:
+        config:
+          google:
+            family: "Rokkitt::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/Rokkitt"
+        "http://www.fontsquirrel.com/fonts/rokkitt"
+      ]
+      designer:
+        name: "Vernon Adams"
+        url: "https://plus.google.com/107807505287232434305/about"
+      license:
+        name: "SIL Open Font License 1.1"
+        url: "http://scripts.sil.org/OFL"
+      country: "UK"
+      year: 2011
+      classification: "Geometric slab"
+      styles: 2
+      example:
+        text: "Hypergolic"
+        color: "#EE4000"
+    ]
+  ,
+    name: "Humanist slab"
+    fonts: [
+      name: "Coustard"
+      webfont:
+        config:
+          google:
+            family: "Coustard::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/Coustard"
+      ]
+      designer:
+        name: "Vernon Adams"
+        url: "https://plus.google.com/107807505287232434305/about"
+      license:
+        name: "SIL Open Font License 1.1"
+        url: "http://scripts.sil.org/OFL"
+      country: "UK"
+      year: 2013
+      classification: "Humanist slab"
+      styles: 2
+      example:
+        text: "Gallophile"
+        color: "#6B8E23"
+    ,
+      name: "Noticia Text"
+      webfont:
+        config:
+          google:
+            family: "Noticia+Text::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/Noticia+Text"
+        "http://www.fontsquirrel.com/fonts/noticia-text"
+      ]
+      designer:
+        name: "JM Solé"
+        url: "http://jmsole.cl/"
+      license:
+        name: "SIL Open Font License 1.1"
+        url: "http://scripts.sil.org/OFL"
+      country: "Chile"
+      year: 2012
+      classification: "Humanist slab"
+      styles: 4
+      example:
+        text: "Pichanga"
+        color: "#e82925"
     ]
   ]
