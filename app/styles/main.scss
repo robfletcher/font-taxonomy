@@ -7,7 +7,6 @@ $blue: #1f7eab;
 
 // overrides for compass defaults
 $contrasted-dark-default: $black;
-$default-transition-duration: 0.3s;
 
 $body-background: $paper;
 $body-text-color: $black;
@@ -53,7 +52,7 @@ a {
 	color: inherit;
 	border-bottom: 1px dotted $body-text-color;
 	text-decoration: none;
-	@include single-transition;
+	@include single-transition($duration: 0.3s);
 	&:focus, &:hover {
 		color: $link-hover-color;
 		border-bottom-color: $link-hover-color;
@@ -142,9 +141,10 @@ a {
 }
 
 .font {
-	display: none;
+	@include single-transition;
+	opacity: 0;
 	&.wf-active {
-		display: block;
+		opacity: 1;
 	}
 
 	@include margin-trailer(1);

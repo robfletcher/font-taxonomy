@@ -8,6 +8,8 @@ window.WebFontConfig =
     $("##{Handlebars.helpers.normalize(fontFamily)}").addClass('wf-active').find('.anatomy').bigtext
       maxfontsize: 256
       childSelector: '> p'
+  active: ->
+    $(window).scrollTop $("#{window.location.hash}").position().top if window.location.hash
 
 colorizeCharacterSet = ->
   $section = $ @
