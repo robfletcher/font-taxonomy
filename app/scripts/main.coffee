@@ -6,6 +6,7 @@ window.WebFontConfig =
     urls: []
   fontactive: (fontFamily, fontDescription) ->
     $("##{Handlebars.helpers.normalize(fontFamily)}").addClass('wf-active').find('.anatomy').bigtext
+      maxfontsize: 256
       childSelector: '> p'
 
 colorizeCharacterSet = ->
