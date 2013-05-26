@@ -11,7 +11,7 @@ window.WebFontConfig =
 colorizeCharacterSet = ->
   $section = $ @
   color = $section.find('.anatomy').css('color')
-  text = $section.find('.anatomy p').text()
+  text = $section.find('.anatomy > p').text()
   codes = (text.charCodeAt(index) for index in [0...text.length])
   for code in codes
     if code <= 96
