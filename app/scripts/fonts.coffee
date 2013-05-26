@@ -132,6 +132,31 @@ window.fonts =
       example:
         text: "Enamoradizo"
         color: "#ba55d3"
+    ,
+      name: "Prata"
+      webfont:
+        config:
+          google:
+            family: "Prata::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/Prata"
+      ]
+      designer:
+        name: "Ivan Petrov"
+      foundry:
+        name: "Cyreal"
+        url: "http://www.cyreal.org/"
+      license:
+        name: "SIL Open Font License 1.1"
+        url: "http://scripts.sil.org/OFL"
+      country: "Russia"
+      year: 2011
+      classification: "Didone"
+      styles: 1
+      example:
+        text: "Dvoryanstvo"
+        color: "#702f3b"
     ]
   ,
     name: "Contemporary serif"
@@ -339,6 +364,32 @@ window.fonts =
       example:
         text: "Café Negro"
         color: "#48D1CC"
+    ,
+      name: "TeX Gyre Adventor"
+      webfont:
+        config:
+          custom:
+            family: "TeX Gyre Adventor"
+            url: "fonts/TeX-Gyre-Adventor/stylesheet.css"
+        weight: 400
+      urls: [
+        "http://www.fontsquirrel.com/fonts/TeX-Gyre-Adventor"
+      ]
+      designer:
+        name: "Bogusław Jackowski, Janusz M. Nowacki"
+      foundry:
+        name: "GUST e-foundry"
+        url: "http://www.gust.org.pl/projects-1/e-foundry"
+      license:
+        name: "GUST Font License (GFL)"
+        url: "http://www.gust.org.pl/projects-1/e-foundry/licenses"
+      country: "Poland"
+      year: 2008
+      classification: "Geometric sans"
+      styles: 4
+      example:
+        text: "Podróżować"
+        color: "#263957"
     ]
   ,
     name: "Humanist sans"
@@ -392,6 +443,32 @@ window.fonts =
       example:
         text: "Dzieńdobry"
         color: "#00CD66"
+    ,
+      name: "Rosario"
+      webfont:
+        config:
+          google:
+            family: "Rosario::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/Rosario"
+        "http://www.fontsquirrel.com/fonts/rosario"
+      ]
+      designer:
+        name: "Héctor Gatti"
+      foundry:
+        name: "Omnibus-Type"
+        url: "http://www.omnibus-type.com/"
+      license:
+        name: "SIL Open Font License 1.1"
+        url: "http://scripts.sil.org/OFL"
+      country: "Argentina"
+      year: "2003, 2011, 2013"
+      classification: "Humanist sans, Semiserif"
+      styles: 4
+      example:
+        text: "Murciélago"
+        color: "#4c8eb9"
     ]
   ,
     name: "Grotesque slab"

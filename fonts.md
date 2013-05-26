@@ -5,7 +5,6 @@
 * Sorts Mill Goudy
 * *Linden Hill*
 * IM Fell Great Primer
-* *Philosopher*
 * *Mate* / Mate SC
 * *Simonetta*
 * Junge
@@ -28,7 +27,6 @@
 
 * Old Standard TT
 * Arapey
-* Prata
 * *Cantata One*
 * Bentham
 * *Vidaloka*
@@ -57,6 +55,7 @@
 ## Grotesque Sans
 
 * *Roboto*
+* Puritan
 
 ## Neo-Grotesque Sans
 
@@ -79,7 +78,6 @@
 * Comfortaa
 * Maven Pro
 * Electrolize
-* *Josefin Sans*
 * *Dosis*
 * *Metrophobic*
 * Poiret One
@@ -88,15 +86,16 @@
 ## Humanist Sans
 
 * Open Sans
-* Rosario
-* *PT Sans*
 * Rambla
 * *Droid Sans*
 * Federo
 * Antic
 * Belleza
-* Puritan
 * Magra
+* *Philosopher*
+* *Arsenal* http://www.fontsquirrel.com/fonts/arsenal
+* *Contax Sans* http://www.fontsquirrel.com/fonts/contax-sans
+* *Tenderness* http://www.fontsquirrel.com/fonts/Tenderness
 
 ## Neo-Humanist Sans
 
