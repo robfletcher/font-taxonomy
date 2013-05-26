@@ -12,6 +12,8 @@ $default-transition-duration: 0.3s;
 $body-background: $paper;
 $body-text-color: $black;
 $font-section-background: $white;
+$link-hover-color: $blue;
+$alt-link-hover-color: lighten($blue, 25%);
 
 $serif-stack: serif;
 $sans-stack: sans-serif;
@@ -53,8 +55,8 @@ a {
 	text-decoration: none;
 	@include single-transition;
 	&:focus, &:hover {
-		color: $blue;
-		border-bottom-color: $blue;
+		color: $link-hover-color;
+		border-bottom-color: $link-hover-color;
 	}
 }
 
@@ -186,41 +188,6 @@ a {
 			}
 		}
 
-		position: relative;
-		.links {
-			position: absolute;
-			top: 0;
-			right: 0;
-
-			a {
-				display: inline-block;
-				width: 48px;
-				height: 48px;
-				text-indent: -9999px;
-				border: {
-					width: 4px;
-					style: solid;
-					color: $black;
-					radius: 50%;
-				}
-				background: {
-					color: $white;
-					position: 0 0;
-					repeat: no-repeat;
-					size: contain;
-				}
-				&[href*='fontsquirrel.com'] {
-					background-image: image-url('fontsquirrel.png');
-				}
-				&[href*='google.com'] {
-					background-image: image-url('google.png');
-				}
-
-				&:focus, &:hover {
-					background-color: $blue;
-				}
-			}
-		}
 	}
 
 	.character-set {
@@ -265,6 +232,42 @@ a {
 			margin: 0;
 			line-height: 1.5;
 		}
+
+		figcaption {
+			@include margin-leader(1);
+		}
+	}
+
+	.links {
+		text-align: right;
+		a {
+			display: inline-block;
+			width: 48px;
+			height: 48px;
+			text-indent: 9999px;
+			border: {
+				width: 4px;
+				style: solid;
+				color: $black;
+				radius: 50%;
+			}
+			background: {
+				color: $white;
+				position: 0 0;
+				repeat: no-repeat;
+				size: contain;
+			}
+			&[href*='fontsquirrel.com'] {
+				background-image: image-url('fontsquirrel.png');
+			}
+			&[href*='google.com'] {
+				background-image: image-url('google.png');
+			}
+
+			&:focus, &:hover {
+				background-color: $alt-link-hover-color;
+			}
+		}
 	}
 }
 
@@ -291,8 +294,8 @@ a {
 		border-bottom-color: contrast-color($black);
 
 		&:focus, &:hover {
-			color: lighten($blue, 35%);
-			border-bottom-color: lighten($blue, 35%);
+			color: $alt-link-hover-color;
+			border-bottom-color: $alt-link-hover-color;
 		}
 	}
 }

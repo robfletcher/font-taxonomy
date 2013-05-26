@@ -25,11 +25,6 @@
     <article id="{{normalize name}}" class="font">
         <header>
             <h1>{{name}}</h1>
-            <aside class="links">
-                {{#each urls}}
-                    <a href="{{this}}">view at {{this}}</a>
-                {{/each}}
-            </aside>
             <dl>
                 {{#if designer}}
                 <dt>Designer</dt>
@@ -60,6 +55,13 @@
         </figure>
         <figure class="anatomy" style="font-family: '{{name}}'; font-weight: {{webfont.weight}}; color: {{example.color}}">
             <p>{{example.text}}</p>
+            <figcaption>
+                <p class="links">
+                    {{#each urls}}
+                    <a href="{{this}}">view at {{this}}</a>
+                    {{/each}}
+                </p>
+            </figcaption>
         </figure>
     </article>
     {{/each}}
