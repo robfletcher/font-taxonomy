@@ -179,7 +179,7 @@ window.fonts =
         url: "http://scripts.sil.org/OFL"
       country: "Argentina"
       year: 2012
-      classification: "Inscribed / Engraved"
+      classification: "Inscribed"
       styles: 2
       example:
         text: "Defrenética"
@@ -238,32 +238,6 @@ window.fonts =
         color: "#559acf"
     ]
   ,
-    name: "Neo-Grotesque sans"
-    fonts: [
-      name: "Source Sans Pro"
-      webfont:
-        config:
-          google:
-            family: "Source+Sans+Pro::latin"
-        weight: 400
-      urls: [
-        "http://www.google.com/fonts/specimen/Source+Sans+Pro"
-        "http://www.fontsquirrel.com/fonts/source-sans-pro"
-      ]
-      designer:
-        name: "Paul D. Hunt"
-      license:
-        name: "SIL Open Font License 1.1"
-        url: "http://scripts.sil.org/OFL"
-      country: "USA / UK"
-      year: 2012
-      classification: "Neo-Grotesque sans"
-      styles: 12
-      example:
-        text: "Simplifying"
-        color: "#1f7eab"
-    ]
-  ,
     name: "Gothic sans"
     fonts: [
       name: "Noto Sans"
@@ -287,6 +261,29 @@ window.fonts =
       example:
         text: "Encompassing"
         color: "#00a816"
+    ,
+      name: "Source Sans Pro"
+      webfont:
+        config:
+          google:
+            family: "Source+Sans+Pro::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/Source+Sans+Pro"
+        "http://www.fontsquirrel.com/fonts/source-sans-pro"
+      ]
+      designer:
+        name: "Paul D. Hunt"
+      license:
+        name: "SIL Open Font License 1.1"
+        url: "http://scripts.sil.org/OFL"
+      country: "USA / UK"
+      year: 2012
+      classification: "Gothic sans"
+      styles: 12
+      example:
+        text: "Simplifying"
+        color: "#1f7eab"
     ]
   ,
     name: "Geometric sans"
@@ -369,10 +366,7 @@ window.fonts =
       example:
         text: "Quantophrenia"
         color: "#990000"
-    ]
-  ,
-    name: "Neo-Humanist sans"
-    fonts: [
+    ,
       name: "Lato"
       webfont:
         config:
