@@ -161,6 +161,32 @@ window.fonts =
   ,
     name: "Contemporary serif"
     fonts: [
+      name: "Alegreya"
+      webfont:
+        config:
+          google:
+            family: "Alegreya::latin"
+        weight: 400
+      urls: [
+        "http://www.google.com/fonts/specimen/Alegreya"
+        "http://www.fontsquirrel.com/fonts/alegreya"
+      ]
+      designer:
+        name: "Juan Pablo del Peral"
+      foundry:
+        name: "Huerta Tipográfica"
+        url: "http://www.huertatipografica.com.ar/"
+      license:
+        name: "SIL Open Font License 1.1"
+        url: "http://scripts.sil.org/OFL"
+      country: "Argentina"
+      year: 2012
+      classification: "Contemporary serif"
+      styles: 12
+      example:
+        text: "Digitalización"
+        color: "#1c974a"
+    ,
       name: "Merriweather"
       webfont:
         config:
