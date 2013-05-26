@@ -78,7 +78,7 @@ window.fonts =
       classification: "Transitional serif"
       styles: 3
       example:
-        text: "Lo pasamos bárbaro"
+        text: "Teleobjetivo"
         color: "#4682b4"
     ,
       name: "Quattrocento"
@@ -104,7 +104,7 @@ window.fonts =
       classification: "Transitional serif"
       styles: 2
       example:
-        text: "Patología"
+        text: "Envergadura"
         color: "#97968b"
     ]
   ,
@@ -543,7 +543,7 @@ window.fonts =
       classification: "Grotesque slab"
       styles: 1
       example:
-        text: "Expressway"
+        text: "Repackaging"
         color: "#d1641b"
     ]
   ,
